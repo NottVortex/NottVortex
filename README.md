@@ -1,5 +1,5 @@
-public String username = "NottVortex";
-private String alias = "BlackH0le";
+public String username = "NottVortex";                                                     
+private String alias = "BlackH0le";                                               
 String[] values = {
       "- 👋 Hi, I’m @NottVortex",                            
       "- 👀 Programming experience of 7+ years",                             
