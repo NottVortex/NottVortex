@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class encryptTester
+public class DecryptTester
 {
     public static void main(String[] args)
     {
@@ -12,14 +12,14 @@ public class encryptTester
         "92s", "3cnio3", "dd4", "rdr2", "dmor42", "pcepaw", "10s", "ccn3i", "jd92", "c3ni4", "v8r", "f94f", "12ds", "4ic4"
         };
         Scanner input = new Scanner(System.in);
-        System.out.print("Input any line of text to encrypt: ");
-        String encrypt = input.nextLine();
-        Encrypt e = new Encrypt(encrypt);
+        System.out.print("Input any line of text to decrypt: ");
+        String decrypt = input.nextLine();
+        Decrypt d = new Decrypt(decrypt);
         
-        e.eLoop();
+        d.dLoop();
         
-        e.encryptInput(encryption);
+        d.decryptInput(encryption);
         
-        System.out.println("Encrypted version: " + e.outputEncrypt());
+        System.out.println("Decrypted version: " + d.outputDecrypt());
     }
 }

@@ -1,16 +1,17 @@
-NottVortex = CoolAsHell              
-CoolAsHell = true
+public String username = "NottVortex";
+private String alias = "BlackH0le";
+String[] values = {
+      "- 👋 Hi, I’m @NottVortex",                            
+      "- 👀 Programming experience of 7+ years",                             
+      "- 🌱 I’m currently learning stuff that I already know in high school (I guess it's \"practice\")",                                   
+      "- 💞️ Undergrad for SJSU",                           
+      "- 📫 How to reach me ... don't"
+};
 
-print ("Script has started")
+while(isAlive()){        
+      if(introducingMyself()){                        
+            System.out.println(values); 
+      }                           
+}                             
 
-if CoolAsHell = true then                                
-      print ("                                   
-      - 👋 Hi, I’m @NottVortex                            
-      - 👀 I’m interested in coding for Unreal Engine                             
-      - 🌱 I’m currently learning stuff that I already know (practice)                                   
-      - 💞️ I’m looking to collaborate on new projects from newborn companies that are looking to make it in the big leagues                           
-      - 📫 How to reach me ... don't                           
-      ")                             
-end                               
-
-print ("Script has ended")
+System.out.println("Goodbye world");

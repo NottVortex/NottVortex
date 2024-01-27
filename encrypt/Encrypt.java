@@ -1,26 +1,26 @@
 import java.util.Scanner;
-public class encrypt {
-    public static String eInput;
-    private static String eOutput = "";
-    private static Scanner input = new Scanner(System.in);
-    private static String alpha = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\"+=-_`'~!@#$%^&*()[]{}:;,<.>/?\"";
+public class Encrypt {
+    public String eInput;
+    private String eOutput = "";
+    private Scanner input = new Scanner(System.in);
+    private String alpha = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\"+=-_`'~!@#$%^&*()[]{}:;,<.>/?\"";
     
         
     public Encrypt(String eInput){
         this.eInput = eInput;
     }
         
-    public static void ask(){
+    public void ask(){
         System.out.print("Input any line of text to encrypt: ");
     }
     
-    public static void setInput(String input){
+    public void setInput(String input){
         eInput = input;
     }
     
-    public static void eLoop(){
+    public void eLoop(){
         while(true){
-            if(checkInput() == true){
+            if(checkInput()){
                 break;
             }
             System.out.println("Special invalid character detected.");
@@ -29,7 +29,7 @@ public class encrypt {
         }
     }
         
-    public static boolean checkInput(){
+    public boolean checkInput(){
         for(int i = 0;i < eInput.length();i++){
             if(eInput.substring(i, i + 1).equals("|")){
                 return false;
@@ -38,7 +38,7 @@ public class encrypt {
         return true;
     }
 
-    public static void encryptInput(String[] encryption){
+    public void encryptInput(String[] encryption){
         int currentLetterIndex;
         String currentLetter;
         for (int i = 0; i < eInput.length(); i++) {
@@ -52,7 +52,7 @@ public class encrypt {
         }
     }
     
-    public static String outputEncrypt(){
+    public String outputEncrypt(){
         return eOutput;
     }
 }
